@@ -1,2 +1,2 @@
 # platypus
-A modern real-time full-text search engine library
+A modern real-time full-text and vector search engine library
