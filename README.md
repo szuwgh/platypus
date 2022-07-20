@@ -1,2 +1,2 @@
 # Gypaetus
-A modern real-time full-text and vector search engine library
+A library of modern real-time full-text and vector search engines
