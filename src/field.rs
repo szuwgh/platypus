@@ -1,1 +1,3 @@
+trait column {}
+
 struct Field {}
