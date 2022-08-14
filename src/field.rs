@@ -1,3 +1,5 @@
-trait column {}
+//域接口定义
+trait Field {}
 
-struct Field {}
+//文本域
+struct TextField {}
