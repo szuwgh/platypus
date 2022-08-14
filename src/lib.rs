@@ -3,9 +3,11 @@ mod document;
 use crate::document::Document;
 
 // search engine struct
-struct Engine {}
+struct IndexWriter {}
 
-impl Engine {
+impl IndexWriter {
     //add a document
-    fn add(doc: &Document) {}
+    fn index(doc: &Document) {}
 }
+
+struct IndexReader {}
