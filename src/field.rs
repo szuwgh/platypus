@@ -1,5 +1,6 @@
 //域接口定义
-trait Field {}
+pub(crate) struct Field {}
 
-//文本域
-struct TextField {}
+pub(crate) enum Value {
+    Str(String),
+}

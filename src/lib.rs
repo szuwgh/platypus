@@ -1,4 +1,5 @@
 mod document;
+mod field;
 
 use crate::document::Document;
 

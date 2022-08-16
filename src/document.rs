@@ -1,9 +1,10 @@
+use crate::field::Field;
 pub(crate) struct Document {
-    data: Vec<u8>,
+    data: Vec<Field>,
 }
 
 impl Document {
-    pub fn add() {}
+    pub fn add(fieldName: &str) {}
 
     pub(crate) fn build() {}
 }
