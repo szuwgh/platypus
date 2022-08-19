@@ -4,7 +4,8 @@ pub(crate) struct Document {
 }
 
 impl Document {
-    pub fn add(fieldName: &str) {}
+    pub fn add(field: Field) {}
 
     pub(crate) fn build() {}
 }
+
