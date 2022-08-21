@@ -12,3 +12,7 @@ impl IndexWriter {
 }
 
 struct IndexReader {}
+
+impl IndexReader {
+    fn search() {}
+}
