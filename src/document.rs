@@ -1,6 +1,7 @@
 use crate::field::Field;
+
 pub(crate) struct Document {
-    data: Vec<Field>,
+    data: Vec<u8>,
 }
 
 impl Document {
@@ -8,4 +9,3 @@ impl Document {
 
     pub(crate) fn build() {}
 }
-
