@@ -4,10 +4,13 @@ pub(crate) struct Field {
     value: Value,
 }
 
+pub(crate) struct Vector {}
+
 impl Field {
     fn new() {}
 }
 
 pub(crate) enum Value {
     Str(String),
+    Vector(Vector),
 }
