@@ -1,18 +1,16 @@
 mod document;
 mod field;
+mod memory;
 
 use crate::document::Document;
+use crate::memory::mem;
 
-// search engine struct
-struct IndexWriter {}
-
-impl IndexWriter {
-    //add a document
-    fn index(doc: &Document) {}
+struct Engine {
+    mem_table: mem::MemTable,
 }
 
-struct IndexReader {}
+impl Engine {
+    fn index(doc: &Document) {}
 
-impl IndexReader {
     fn search() {}
 }
