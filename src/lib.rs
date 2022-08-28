@@ -15,12 +15,12 @@ impl IndexMemoryWriter {
             mem_table: mem::MemTable::default(),
         }
     }
-
-    fn index(doc: &Document) {}
-
-    fn search() {}
 }
 
 struct IndexWriter {}
 
 struct IndexReader {}
+
+impl IndexReader {
+    fn search(doc: &Document) {}
+}
