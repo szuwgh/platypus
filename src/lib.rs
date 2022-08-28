@@ -5,12 +5,22 @@ mod memory;
 use crate::document::Document;
 use crate::memory::mem;
 
-struct Engine {
+struct IndexMemoryWriter {
     mem_table: mem::MemTable,
 }
 
-impl Engine {
+impl IndexMemoryWriter {
+    fn new() -> IndexMemoryWriter {
+        Self {
+            mem_table: mem::MemTable::default(),
+        }
+    }
+
     fn index(doc: &Document) {}
 
     fn search() {}
 }
+
+struct IndexWriter {}
+
+struct IndexReader {}
