@@ -7,10 +7,11 @@ pub(crate) struct Field {
 pub(crate) struct Vector {}
 
 impl Field {
-    fn new() {}
+    fn new(name: &str) {}
 }
 
 pub(crate) enum Value {
     Str(String),
     Vector(Vector),
+    Int(u32),
 }
