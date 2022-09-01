@@ -1,1 +1,1 @@
-struct Block {}
+pub(crate) struct Block {}
