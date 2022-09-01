@@ -1,6 +1,7 @@
 mod document;
 mod field;
 mod memory;
+mod util;
 
 use crate::document::Document;
 use crate::memory::mem;

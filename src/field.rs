@@ -13,5 +13,6 @@ impl Field {
 pub(crate) enum Value {
     Str(String),
     Vector(Vector),
+    Image(),
     Int(u32),
 }
