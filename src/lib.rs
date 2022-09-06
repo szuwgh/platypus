@@ -1,4 +1,5 @@
 mod document;
+mod embed;
 mod field;
 mod memory;
 mod util;
@@ -6,19 +7,19 @@ mod util;
 use crate::document::Document;
 use crate::memory::mem;
 
-struct IndexMemoryWriter {
+pub struct IndexWriter {
     mem_table: mem::MemTable,
 }
 
-impl IndexMemoryWriter {
-    fn new() -> IndexMemoryWriter {
+impl IndexWriter {
+    fn new() -> IndexWriter {
         Self {
             mem_table: mem::MemTable::default(),
         }
     }
 }
 
-struct IndexWriter {}
+pub struct IndexDiskWriter {}
 
 struct IndexReader {}
 
