@@ -26,6 +26,7 @@ impl DefaultImageEmbed {
         Self { model }
     }
 
+    //加载模型
     fn load_model(m: ModelConfig) -> TractSimplePlan {
         let mut model = tract_onnx::onnx()
             .model_for_path(m.model_path.clone())
@@ -45,7 +46,8 @@ impl DefaultImageEmbed {
     }
 
     pub(crate) fn embed<R: BufRead + Seek>(r: R, image_ext: &str) -> GyResult<()> {
-        let image_format = ImageFormat::from_extension(image_ext).ok_or("not surrport")?;
+        let image_format =
+            ImageFormat::from_extension(image_ext).ok_or("not surrport extension")?;
         let im = image::load(r, image_format)?;
 
         Ok(())
